@@ -1,18 +1,6 @@
 {% load i18n thumbnail sekizai_tags %}
 {% addtoblock "css" %}<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cmsplugin_filer_folder/css/slideshow.css" media="screen, projection" />{% endaddtoblock "css" %}
 {% addtoblock "js" %}<script type="text/javascript" src="{{ STATIC_URL }}cmsplugin_filer_folder/js/jquery.cycle2.min-2.1.1.js"></script>{% endaddtoblock "js" %}
-{% addtoblock "js" %}
-<script type="text/javascript">
-//<![CDATA[
-jQuery(document).ready(function ($) {
-    $('.cmsplugin_filer_folder_slideshow').cycle({
-        fx: 'fade'
-    });
-});
-//]]>
-</script>
-{% endaddtoblock %}
-
 
 {% firstof object.title object.folder.name  %}
 
@@ -46,7 +34,7 @@ jQuery(document).ready(function ($) {
     </div>
 {% else %}
     <!-- start: slideshow -->
-    <div class="cmsplugin_filer_folder_slideshow" id="folder_{{ object.id }}">
+    <div class="cycle-slideshow" fx="fade" id="folder_{{ object.id }}">
         {% for image in folder_images %}
             <img src="{% thumbnail image.file 200x200 crop="True" upscale="True" %}">
         {% endfor %}
