@@ -1,5 +1,5 @@
 /**
- * Galleria Classic Theme 2012-08-08
+ * Galleria cmsplugin_filer Theme 2012-08-08
  * http://galleria.io
  *
  * Licensed under the MIT license
@@ -12,9 +12,9 @@
 /*global window, jQuery, Galleria */
 
 Galleria.addTheme({
-    name: 'classic',
+    name: 'cmsplugin_filer',
     author: 'Galleria',
-    css: 'galleria.classic.css',
+    css: 'galleria.cmsplugin_filer.css',
     defaults: {
         transition: 'slide',
         thumbCrop:  'height',
@@ -24,7 +24,7 @@ Galleria.addTheme({
     },
     init: function(options) {
 
-        Galleria.requires(1.33, 'This version of Classic theme requires Galleria 1.3.3 or later');
+        Galleria.requires(1.33, 'This version of cmsplugin_filer theme requires Galleria 1.3.3 or later');
 
         // add some elements
         this.addElement('info-link','info-close');
