@@ -1,5 +1,5 @@
 /**
- * Galleria cmsplugin_filer Theme 2012-08-08
+ * Galleria cmsplugin_filer Theme 2014-02-01
  * http://galleria.io
  *
  * Licensed under the MIT license
@@ -13,7 +13,7 @@
 
 Galleria.addTheme({
     name: 'cmsplugin_filer',
-    author: 'Galleria',
+    author: 'Elias Probst <mail@eliasprobst.eu>',
     css: 'galleria.cmsplugin_filer.css',
     defaults: {
         transition: 'slide',
