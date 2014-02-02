@@ -5,7 +5,7 @@
 {% addtoblock "js" %}
 <script type="text/javascript">
 //<![CDATA[
-Galleria.loadTheme('{{ STATIC_URL }}cmsplugin_filer_folder/js/galleria/themes/classic/galleria.classic.min.js');
+Galleria.loadTheme('{{ STATIC_URL }}cmsplugin_filer_folder/js/galleria/themes/classic/galleria.cmsplugin_filer.js');
 Galleria.run('.galleria');
 jQuery(document).ready(function ($) {
     Galleria.configure({
@@ -17,8 +17,6 @@ jQuery(document).ready(function ($) {
 </script>
 {% endaddtoblock %}
 
-
-{% firstof object.title object.folder.name  %}
 
 {% if object.view_option == "list" %}
     <div class="cmsplugin_filer_folder_list" id="folder_{{ instance.id }}">
