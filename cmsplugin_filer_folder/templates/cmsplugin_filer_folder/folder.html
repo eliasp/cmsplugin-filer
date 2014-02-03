@@ -5,12 +5,10 @@
 <script type="text/javascript">
 //<![CDATA[
 Galleria.loadTheme('{{ STATIC_URL }}cmsplugin_filer_folder/js/galleria/themes/cmsplugin_filer/galleria.cmsplugin_filer.js');
-Galleria.run('.galleria');
-jQuery(document).ready(function ($) {
-    Galleria.configure({
-        imageCrop: true,
-        transition: 'fade',
-    });
+Galleria.run('.galleria', {
+    imageCrop: true,
+    transition: 'fade',
+    autoplay: 3000
 });
 //]]>
 </script>
